@@ -1,33 +1,33 @@
-# Wurst Client v7
+# Opti Client v1.0
 
-![Wurst Client logo](https://img.wimods.net/github.com/Wurst-Imperium/Wurst7?to=https://wurst.wiki/_media/logo/wurst_758x192.webp)
+![Opti Client logo](https://github.com/OptiClient/Opti-Client/assets/logo.png)
 
-- **Downloads:** [https://www.wurstclient.net/download/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Fdownload%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+## The Ultimate Minecraft Enhancement Client
 
-- **Installation guide:** [https://www.wurstclient.net/tutorials/how-to-install/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Ftutorials%2Fhow-to-install%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+Opti Client is a powerful and feature-rich Minecraft client that enhances your gaming experience with a wide range of utilities and modifications.
 
-- **Feature list:** [https://www.wurstclient.net/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+- **Downloads:** [Latest Release](https://github.com/OptiClient/Opti-Client/releases)
 
-- **Wiki:** [https://wurst.wiki/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwurst.wiki%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+- **Installation guide:** [Installation Wiki](https://github.com/OptiClient/Opti-Client/wiki/Installation)
 
-- **Forum:** [https://wurstforum.net/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwurstforum.net%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)	
+- **Feature list:** [Features Wiki](https://github.com/OptiClient/Opti-Client/wiki/Features)
 
-- **Twitter/X:** [https://x.com/Wurst_Imperium](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://x.com/Wurst_Imperium)
+- **Wiki:** [Opti Client Wiki](https://github.com/OptiClient/Opti-Client/wiki)
 
-- **YouTube:** [https://www.youtube.com/@Alexander01998](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://www.youtube.com/@Alexander01998)
+- **Discussions:** [GitHub Discussions](https://github.com/OptiClient/Opti-Client/discussions)
 
-- **Donations/Perks:** [https://ko-fi.com/wurst](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://ko-fi.com/wurst)
+- **Issues:** [Report Issues](https://github.com/OptiClient/Opti-Client/issues)
 
 ## Installation
 
-Wurst 7 can be installed just like any other Fabric mod. Here are the basic installation steps:
+Opti Client can be installed just like any other Fabric mod. Here are the basic installation steps:
 
 1. Run the Fabric installer.
-2. Add the Wurst Client and Fabric API to your mods folder.
+2. Add Opti Client and Fabric API to your mods folder.
 
-Please refer to the [full Wurst 7 installation guide](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Ftutorials%2Fhow-to-install%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo) if you need more detailed instructions or run into any problems.
+Please refer to the [full installation guide](https://github.com/OptiClient/Opti-Client/wiki/Installation) if you need more detailed instructions or run into any problems.
 
-Also, this should be obvious, but you do need to have a licensed copy of Minecraft Java Edition in order to use Wurst. Wurst is a cheat client, not a pirate client.
+Note: You need to have a licensed copy of Minecraft Java Edition in order to use Opti Client.
 
 ## Development Setup
 
@@ -39,8 +39,8 @@ Also, this should be obvious, but you do need to have a licensed copy of Minecra
 1. Clone the repository:
 
    ```pwsh
-   git clone https://github.com/Wurst-Imperium/Wurst7.git
-   cd Wurst7
+   git clone https://github.com/OptiClient/Opti-Client.git
+   cd Opti-Client
    ```
 
 2. Generate the sources:
@@ -61,8 +61,8 @@ Also, this should be obvious, but you do need to have a licensed copy of Minecra
 1. Clone the repository:
 
    ```pwsh
-   git clone https://github.com/Wurst-Imperium/Wurst7.git
-   cd Wurst7
+   git clone https://github.com/OptiClient/Opti-Client.git
+   cd Opti-Client
    ```
 
 2. Generate the sources:
@@ -71,34 +71,34 @@ Also, this should be obvious, but you do need to have a licensed copy of Minecra
    ./gradlew genSources vscode
    ```
 
-3. Open the `Wurst7` folder in VSCode / Cursor.
+3. Open the `Opti-Client` folder in VSCode / Cursor.
 
-4. **Optional:** In the VSCode settings, set `java.format.settings.url` to `https://raw.githubusercontent.com/Wurst-Imperium/Wurst7/master/codestyle/formatter.xml` and `java.format.settings.profile` to `Wurst-Imperium`.
+4. **Optional:** In the VSCode settings, set `java.format.settings.url` to `https://raw.githubusercontent.com/OptiClient/Opti-Client/master/codestyle/formatter.xml` and `java.format.settings.profile` to `Opti-Client`.
 
 ### Development using IntelliJ IDEA
 
 I don't use or recommend IntelliJ, but the commands to run would be:
 
 ```pwsh
-git clone https://github.com/Wurst-Imperium/Wurst7.git
-cd Wurst7
+git clone https://github.com/OptiClient/Opti-Client.git
+cd Opti-Client
 ./gradlew genSources idea
 ```
 
 
 ## Contributing
 
-Please always [contact me](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Fcontact%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo) before opening a Pull Request. Any method works. That way we can discuss your ideas early and avoid wasting your time working on unwanted features or having to make lots of changes later.
+We welcome contributions! Please open an issue first to discuss what you would like to change.
 
-We also have [contributing guidelines](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://github.com/Wurst-Imperium/Wurst7/blob/master/CONTRIBUTING.md) to help you get started.
+We also have [contributing guidelines](https://github.com/OptiClient/Opti-Client/blob/master/CONTRIBUTING.md) to help you get started.
 
 ## Translations
 
-To enable translations in-game, go to Wurst Options > Translations > ON.
+To enable translations in-game, go to Opti Options > Translations > ON.
 
-The preferred way to submit translations is through a Pull Request here on GitHub. The translation files are located in [this folder](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://github.com/Wurst-Imperium/Wurst7/tree/master/src/main/resources/assets/wurst/translations).
+The preferred way to submit translations is through a Pull Request here on GitHub. The translation files are located in [this folder](https://github.com/OptiClient/Opti-Client/tree/master/src/main/resources/assets/opti/translations).
 
-Names of features (hacks/commands/etc.) should always be kept in English. This ensures that everyone can use the same commands, keybinds, etc. regardless of their language setting. It also makes it easier to communicate with someone who uses Wurst in a different language.
+Names of features (hacks/commands/etc.) should always be kept in English. This ensures that everyone can use the same commands, keybinds, etc. regardless of their language setting. It also makes it easier to communicate with someone who uses Opti Client in a different language.
 
 ## License
 

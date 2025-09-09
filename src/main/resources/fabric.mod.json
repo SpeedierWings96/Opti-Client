@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "wurst",
+  "id": "opti",
   "version": "${version}",
-  "name": "Wurst Client",
-  "description": "Wurst Wurst Wurst!",
+  "name": "Opti Client",
+  "description": "Opti Client - The Ultimate Minecraft Enhancement",
   "authors": [
-    "Alexander01998"
+    "Opti Client Team"
   ],
   "contact": {
-    "homepage": "https://www.wurstclient.net/modmenu-homepage/",
-    "sources": "https://www.wurstclient.net/modmenu-sources/",
-    "issues": "https://www.wurstclient.net/modmenu-issues/"
+    "homepage": "https://github.com/OptiClient",
+    "sources": "https://github.com/OptiClient/Opti-Client",
+    "issues": "https://github.com/OptiClient/Opti-Client/issues"
   },
   "license": "GPL-3.0-or-later",
-  "icon": "assets/wurst/icon.png",
+  "icon": "assets/opti/icon.png",
   "environment": "client",
   "entrypoints": {
     "main": [
-      "net.wurstclient.WurstInitializer",
-      "net.wurstclient.test.WurstE2ETestClient"
+      "net.opticlient.OptiInitializer",
+      "net.opticlient.test.OptiE2ETestClient"
     ]
   },
   "mixins": [
-    "wurst.mixins.json"
+    "opti.mixins.json"
   ],
-  "accessWidener": "wurst.accesswidener",
+  "accessWidener": "opti.accesswidener",
   "depends": {
     "fabricloader": ">=0.16.13",
     "fabric-api": ">=0.126.1",
@@ -42,10 +42,10 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.donate": "https://www.wurstclient.net/modmenu-donate/",
-        "modmenu.twitter": "https://www.wurstclient.net/modmenu-twitter/",
-        "modmenu.wiki": "https://www.wurstclient.net/modmenu-wiki/",
-        "Forum": "https://www.wurstclient.net/modmenu-forum/"
+        "modmenu.donate": "https://github.com/OptiClient/Opti-Client",
+        "modmenu.twitter": "https://github.com/OptiClient",
+        "modmenu.wiki": "https://github.com/OptiClient/Opti-Client/wiki",
+        "Forum": "https://github.com/OptiClient/Opti-Client/discussions"
       }
     }
   }
