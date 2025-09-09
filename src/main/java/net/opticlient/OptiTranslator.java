@@ -184,7 +184,7 @@ public class OptiTranslator implements SynchronousResourceReloader
 		for(String langCode : langCodes)
 		{
 			String langFilePath = "translations/" + langCode + ".json";
-			Identifier langId = Identifier.of("Opti", langFilePath);
+			Identifier langId = Identifier.of("opti", langFilePath);
 			
 			for(Resource resource : manager.getAllResources(langId))
 				try(InputStream stream = resource.getInputStream())
