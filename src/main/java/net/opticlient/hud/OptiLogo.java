@@ -19,7 +19,7 @@ public final class OptiLogo
 {
 	private static final OptiClient OPTI = OptiClient.INSTANCE;
 	private static final Identifier LOGO_TEXTURE =
-		Identifier.of("Opti", "Opti_128.png");
+		Identifier.of("opti", "opti_128.png");
 	
 	public void render(DrawContext context)
 	{
