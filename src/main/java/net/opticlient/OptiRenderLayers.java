@@ -20,7 +20,7 @@ public enum OptiRenderLayers
 	 * Similar to {@link RenderLayer#getLines()}, but with line width 2.
 	 */
 	public static final RenderLayer.MultiPhase LINES =
-		RenderLayer.of("Opti:lines", 1536, OptiShaderPipelines.DEPTH_TEST_LINES,
+		RenderLayer.of("opti:lines", 1536, OptiShaderPipelines.DEPTH_TEST_LINES,
 			RenderLayer.MultiPhaseParameters.builder()
 				.lineWidth(new RenderPhase.LineWidth(OptionalDouble.of(2)))
 				.layering(RenderLayer.VIEW_OFFSET_Z_LAYERING)
@@ -31,7 +31,7 @@ public enum OptiRenderLayers
 	 * depth test.
 	 */
 	public static final RenderLayer.MultiPhase ESP_LINES =
-		RenderLayer.of("Opti:esp_lines", 1536, OptiShaderPipelines.ESP_LINES,
+		RenderLayer.of("opti:esp_lines", 1536, OptiShaderPipelines.ESP_LINES,
 			RenderLayer.MultiPhaseParameters.builder()
 				.lineWidth(new RenderPhase.LineWidth(OptionalDouble.of(2)))
 				.layering(RenderLayer.VIEW_OFFSET_Z_LAYERING)
@@ -41,7 +41,7 @@ public enum OptiRenderLayers
 	 * Similar to {@link RenderLayer#getLineStrip()}, but with line width 2.
 	 */
 	public static final RenderLayer.MultiPhase LINE_STRIP =
-		RenderLayer.of("Opti:line_strip", 1536, false, true,
+		RenderLayer.of("opti:line_strip", 1536, false, true,
 			OptiShaderPipelines.DEPTH_TEST_LINE_STRIP,
 			RenderLayer.MultiPhaseParameters.builder()
 				.lineWidth(new RenderPhase.LineWidth(OptionalDouble.of(2)))
@@ -53,7 +53,7 @@ public enum OptiRenderLayers
 	 * no depth test.
 	 */
 	public static final RenderLayer.MultiPhase ESP_LINE_STRIP =
-		RenderLayer.of("Opti:esp_line_strip", 1536, false, true,
+		RenderLayer.of("opti:esp_line_strip", 1536, false, true,
 			OptiShaderPipelines.ESP_LINE_STRIP,
 			RenderLayer.MultiPhaseParameters.builder()
 				.lineWidth(new RenderPhase.LineWidth(OptionalDouble.of(2)))
@@ -64,7 +64,7 @@ public enum OptiRenderLayers
 	 * Similar to {@link RenderLayer#getDebugQuads()}, but with culling enabled.
 	 */
 	public static final RenderLayer.MultiPhase QUADS = RenderLayer.of(
-		"Opti:quads", 1536, false, true, OptiShaderPipelines.QUADS,
+		"opti:quads", 1536, false, true, OptiShaderPipelines.QUADS,
 		RenderLayer.MultiPhaseParameters.builder().build(false));
 	
 	/**
@@ -72,14 +72,14 @@ public enum OptiRenderLayers
 	 * and no depth test.
 	 */
 	public static final RenderLayer.MultiPhase ESP_QUADS = RenderLayer.of(
-		"Opti:esp_quads", 1536, false, true, OptiShaderPipelines.ESP_QUADS,
+		"opti:esp_quads", 1536, false, true, OptiShaderPipelines.ESP_QUADS,
 		RenderLayer.MultiPhaseParameters.builder().build(false));
 	
 	/**
 	 * Similar to {@link RenderLayer#getDebugQuads()}, but with no depth test.
 	 */
 	public static final RenderLayer.MultiPhase ESP_QUADS_NO_CULLING =
-		RenderLayer.of("Opti:esp_quads_no_culling", 1536, false, true,
+		RenderLayer.of("opti:esp_quads_no_culling", 1536, false, true,
 			OptiShaderPipelines.ESP_QUADS_NO_CULLING,
 			RenderLayer.MultiPhaseParameters.builder().build(false));
 	

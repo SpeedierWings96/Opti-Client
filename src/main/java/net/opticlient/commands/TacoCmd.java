@@ -22,10 +22,10 @@ public final class TacoCmd extends Command
 	implements GUIRenderListener, UpdateListener
 {
 	private final Identifier[] tacos =
-		{Identifier.of("Opti", "dancingtaco1.png"),
-			Identifier.of("Opti", "dancingtaco2.png"),
-			Identifier.of("Opti", "dancingtaco3.png"),
-			Identifier.of("Opti", "dancingtaco4.png")};
+		{Identifier.of("opti", "dancingtaco1.png"),
+			Identifier.of("opti", "dancingtaco2.png"),
+			Identifier.of("opti", "dancingtaco3.png"),
+			Identifier.of("opti", "dancingtaco4.png")};
 	
 	private boolean enabled;
 	private int ticks = 0;

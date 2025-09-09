@@ -27,8 +27,8 @@ public enum OptiShaderPipelines
 	public static final Snippet FOGLESS_LINES_SNIPPET = RenderPipeline
 		.builder(RenderPipelines.TRANSFORMS_PROJECTION_FOG_SNIPPET,
 			RenderPipelines.GLOBALS_SNIPPET)
-		.withVertexShader(Identifier.of("Opti:core/fogless_lines"))
-		.withFragmentShader(Identifier.of("Opti:core/fogless_lines"))
+		.withVertexShader(Identifier.of("opti:core/fogless_lines"))
+		.withFragmentShader(Identifier.of("opti:core/fogless_lines"))
 		.withBlend(BlendFunction.TRANSLUCENT).withCull(false)
 		.withVertexFormat(VertexFormats.POSITION_COLOR_NORMAL, DrawMode.LINES)
 		.buildSnippet();
@@ -38,7 +38,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline DEPTH_TEST_LINES =
 		RenderPipelines.register(RenderPipeline.builder(FOGLESS_LINES_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_depth_test_lines"))
+			.withLocation(Identifier.of("opti:pipeline/opti_depth_test_lines"))
 			.build());
 	
 	/**
@@ -46,7 +46,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline ESP_LINES =
 		RenderPipelines.register(RenderPipeline.builder(FOGLESS_LINES_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_esp_lines"))
+			.withLocation(Identifier.of("opti:pipeline/opti_esp_lines"))
 			.withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build());
 	
 	/**
@@ -55,7 +55,7 @@ public enum OptiShaderPipelines
 	public static final RenderPipeline DEPTH_TEST_LINE_STRIP =
 		RenderPipelines.register(RenderPipeline.builder(FOGLESS_LINES_SNIPPET)
 			.withLocation(
-				Identifier.of("Opti:pipeline/opti_depth_test_line_strip"))
+				Identifier.of("opti:pipeline/opti_depth_test_line_strip"))
 			.withVertexFormat(VertexFormats.POSITION_COLOR_NORMAL,
 				DrawMode.LINE_STRIP)
 			.build());
@@ -65,7 +65,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline ESP_LINE_STRIP =
 		RenderPipelines.register(RenderPipeline.builder(FOGLESS_LINES_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_esp_line_strip"))
+			.withLocation(Identifier.of("opti:pipeline/opti_esp_line_strip"))
 			.withVertexFormat(VertexFormats.POSITION_COLOR_NORMAL,
 				DrawMode.LINE_STRIP)
 			.withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build());
@@ -75,7 +75,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline QUADS = RenderPipelines
 		.register(RenderPipeline.builder(RenderPipelines.POSITION_COLOR_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_quads"))
+			.withLocation(Identifier.of("opti:pipeline/opti_quads"))
 			.withDepthTestFunction(DepthTestFunction.LEQUAL_DEPTH_TEST)
 			.build());
 	
@@ -85,7 +85,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline ESP_QUADS = RenderPipelines
 		.register(RenderPipeline.builder(RenderPipelines.POSITION_COLOR_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_esp_quads"))
+			.withLocation(Identifier.of("opti:pipeline/opti_esp_quads"))
 			.withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build());
 	
 	/**
@@ -93,7 +93,7 @@ public enum OptiShaderPipelines
 	 */
 	public static final RenderPipeline ESP_QUADS_NO_CULLING = RenderPipelines
 		.register(RenderPipeline.builder(RenderPipelines.POSITION_COLOR_SNIPPET)
-			.withLocation(Identifier.of("Opti:pipeline/opti_esp_quads"))
+			.withLocation(Identifier.of("opti:pipeline/opti_esp_quads"))
 			.withCull(false)
 			.withDepthTestFunction(DepthTestFunction.NO_DEPTH_TEST).build());
 }
