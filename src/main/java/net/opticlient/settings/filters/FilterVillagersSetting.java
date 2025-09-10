@@ -26,14 +26,14 @@ public final class FilterVillagersSetting extends EntityFilterCheckbox
 	public static FilterVillagersSetting genericCombat(boolean checked)
 	{
 		return new FilterVillagersSetting(
-			"description.OPTI.setting.generic.filter_villagers_combat",
+			"description.opti.setting.generic.filter_villagers_combat",
 			checked);
 	}
 	
 	public static FilterVillagersSetting genericVision(boolean checked)
 	{
 		return new FilterVillagersSetting(
-			"description.OPTI.setting.generic.filter_villagers_vision",
+			"description.opti.setting.generic.filter_villagers_vision",
 			checked);
 	}
 }

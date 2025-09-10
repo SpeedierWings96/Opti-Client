@@ -17,7 +17,7 @@ public final class AttackSpeedSliderSetting extends SliderSetting
 	
 	public AttackSpeedSliderSetting()
 	{
-		this("Speed", "description.OPTI.setting.generic.attack_speed");
+		this("Speed", "description.opti.setting.generic.attack_speed");
 	}
 	
 	public AttackSpeedSliderSetting(String name, String description)

@@ -18,7 +18,7 @@ public final class PauseAttackOnContainersSetting extends CheckboxSetting
 	public PauseAttackOnContainersSetting(boolean checked)
 	{
 		super("Pause on containers",
-			"description.OPTI.setting.generic.pause_attack_on_containers",
+			"description.opti.setting.generic.pause_attack_on_containers",
 			checked);
 	}
 	

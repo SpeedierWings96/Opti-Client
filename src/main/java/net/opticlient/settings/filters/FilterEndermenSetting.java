@@ -38,14 +38,14 @@ public final class FilterEndermenSetting extends AttackDetectingEntityFilter
 	public static FilterEndermenSetting genericCombat(Mode selected)
 	{
 		return new FilterEndermenSetting(
-			"description.OPTI.setting.generic.filter_endermen_combat",
+			"description.opti.setting.generic.filter_endermen_combat",
 			selected);
 	}
 	
 	public static FilterEndermenSetting genericVision(Mode selected)
 	{
 		return new FilterEndermenSetting(
-			"description.OPTI.setting.generic.filter_endermen_vision",
+			"description.opti.setting.generic.filter_endermen_vision",
 			selected);
 	}
 	

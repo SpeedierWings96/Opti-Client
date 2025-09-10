@@ -59,20 +59,20 @@ public final class SwingHandSetting
 	public static WText genericMiningDescription(Hack hack)
 	{
 		return WText.translated(
-			"description.OPTI.setting.generic.swing_hand_mining",
+			"description.opti.setting.generic.swing_hand_mining",
 			hack.getName());
 	}
 	
 	public static WText genericCombatDescription(Hack hack)
 	{
 		return WText.translated(
-			"description.OPTI.setting.generic.swing_hand_combat",
+			"description.opti.setting.generic.swing_hand_combat",
 			hack.getName());
 	}
 	
 	private static WText hackDescription(Hack hack)
 	{
-		return WText.translated("description.OPTI.setting."
+		return WText.translated("description.opti.setting."
 			+ hack.getName().toLowerCase() + ".swing_hand");
 	}
 	
@@ -105,7 +105,7 @@ public final class SwingHandSetting
 		CLIENT("Client-side", hand -> MC.player.swingHand(hand));
 		
 		private static final String TRANSLATION_KEY_PREFIX =
-			"description.OPTI.setting.generic.swing_hand.";
+			"description.opti.setting.generic.swing_hand.";
 		
 		private final String name;
 		private final WText description;

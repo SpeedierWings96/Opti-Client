@@ -49,27 +49,27 @@ import net.opticlient.util.RotationUtils;
 public final class AnchorAuraHack extends Hack implements UpdateListener
 {
 	private final SliderSetting range =
-		new SliderSetting("Range", "description.OPTI.setting.anchoraura.range",
+		new SliderSetting("Range", "description.opti.setting.anchoraura.range",
 			6, 1, 6, 0.05, ValueDisplay.DECIMAL);
 	
 	private final CheckboxSetting autoPlace =
 		new CheckboxSetting("Auto-place anchors",
-			"description.OPTI.setting.anchoraura.auto-place_anchors", true);
+			"description.opti.setting.anchoraura.auto-place_anchors", true);
 	
 	private final FacingSetting faceBlocks =
 		FacingSetting.withPacketSpam("Face anchors",
-			"description.OPTI.setting.anchoraura.face_anchors", Facing.OFF);
+			"description.opti.setting.anchoraura.face_anchors", Facing.OFF);
 	
 	private final CheckboxSetting checkLOS =
 		new CheckboxSetting("Check line of sight",
-			"description.OPTI.setting.anchoraura.check_line_of_sight", false);
+			"description.opti.setting.anchoraura.check_line_of_sight", false);
 	
 	private final SwingHandSetting swingHand =
 		new SwingHandSetting(this, SwingHand.CLIENT);
 	
 	private final EnumSetting<TakeItemsFrom> takeItemsFrom =
 		new EnumSetting<>("Take items from",
-			"description.OPTI.setting.anchoraura.take_items_from",
+			"description.opti.setting.anchoraura.take_items_from",
 			TakeItemsFrom.values(), TakeItemsFrom.INVENTORY);
 	
 	private final EntityFilterList entityFilters =

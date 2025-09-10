@@ -24,19 +24,19 @@ public final class FollowFilterList extends EntityFilterList
 		ArrayList<EntityFilter> builder = new ArrayList<>();
 		
 		builder.add(new FilterPlayersSetting(
-			"description.OPTI.setting.follow.filter_players", false));
+			"description.opti.setting.follow.filter_players", false));
 		
 		builder.add(new FilterSleepingSetting(
-			"description.OPTI.setting.follow.filter_sleeping", false));
+			"description.opti.setting.follow.filter_sleeping", false));
 		
 		builder.add(new FilterFlyingSetting(
-			"description.OPTI.setting.follow.filter_flying", 0));
+			"description.opti.setting.follow.filter_flying", 0));
 		
 		builder.add(new FilterHostileSetting(
 			"Won't follow hostile mobs like zombies and creepers.", true));
 		
 		builder.add(FilterNeutralSetting
-			.onOffOnly("description.OPTI.setting.follow.filter_neutral", true));
+			.onOffOnly("description.opti.setting.follow.filter_neutral", true));
 		
 		builder.add(new FilterPassiveSetting(
 			"Won't follow animals like pigs and cows, ambient mobs like bats, and water mobs like fish, squid and dolphins.",
@@ -50,45 +50,45 @@ public final class FollowFilterList extends EntityFilterList
 			"Won't follow baby pigs, baby villagers, etc.", true));
 		
 		builder.add(new FilterBatsSetting(
-			"description.OPTI.setting.follow.filter_bats", true));
+			"description.opti.setting.follow.filter_bats", true));
 		
 		builder.add(new FilterSlimesSetting("Won't follow slimes.", true));
 		
 		builder.add(new FilterPetsSetting(
-			"description.OPTI.setting.follow.filter_pets", true));
+			"description.opti.setting.follow.filter_pets", true));
 		
 		builder.add(new FilterVillagersSetting(
-			"description.OPTI.setting.follow.filter_villagers", true));
+			"description.opti.setting.follow.filter_villagers", true));
 		
 		builder.add(new FilterZombieVillagersSetting(
-			"description.OPTI.setting.follow.filter_zombie_villagers", true));
+			"description.opti.setting.follow.filter_zombie_villagers", true));
 		
 		builder.add(new FilterGolemsSetting(
-			"description.OPTI.setting.follow.filter_golems", true));
+			"description.opti.setting.follow.filter_golems", true));
 		
 		builder
 			.add(FilterPiglinsSetting.onOffOnly("Won't follow piglins.", true));
 		
 		builder.add(FilterZombiePiglinsSetting.onOffOnly(
-			"description.OPTI.setting.follow.filter_zombie_piglins", true));
+			"description.opti.setting.follow.filter_zombie_piglins", true));
 		
 		builder.add(FilterEndermenSetting.onOffOnly(
-			"description.OPTI.setting.follow.filter_endermen", true));
+			"description.opti.setting.follow.filter_endermen", true));
 		
 		builder.add(new FilterShulkersSetting(
-			"description.OPTI.setting.follow.filter_shulkers", true));
+			"description.opti.setting.follow.filter_shulkers", true));
 		
 		builder.add(new FilterAllaysSetting(
-			"description.OPTI.setting.follow.filter_allays", true));
+			"description.opti.setting.follow.filter_allays", true));
 		
 		builder.add(new FilterInvisibleSetting(
-			"description.OPTI.setting.follow.filter_invisible", false));
+			"description.opti.setting.follow.filter_invisible", false));
 		
 		builder.add(new FilterArmorStandsSetting(
-			"description.OPTI.setting.follow.filter_armor_stands", true));
+			"description.opti.setting.follow.filter_armor_stands", true));
 		
 		builder.add(new FilterMinecartsSetting(
-			"description.OPTI.setting.follow.filter_minecarts", true));
+			"description.opti.setting.follow.filter_minecarts", true));
 		
 		return new FollowFilterList(builder);
 	}

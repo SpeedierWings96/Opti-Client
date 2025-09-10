@@ -517,7 +517,7 @@ public final class AltManagerScreen extends Screen
 	{
 		// translate
 		String translated = OptiClient.INSTANCE
-			.translate("description.OPTI.altmanager." + trKey);
+			.translate("description.opti.altmanager." + trKey);
 		
 		// line-wrap
 		StringJoiner joiner = new StringJoiner("\n");

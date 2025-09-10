@@ -126,8 +126,7 @@ public final class KeybindList
 		addKB(set, "k", "multiaura");
 		addKB(set, "n", "nuker");
 		addKB(set, "r", "killaura");
-		addKB(set, "right.shift", "navigator");
-		addKB(set, "right.control", "clickgui");
+		addKB(set, "right.shift", "clickgui");
 		addKB(set, "u", "freecam");
 		addKB(set, "x", "x-ray");
 		addKB(set, "y", "sneak");

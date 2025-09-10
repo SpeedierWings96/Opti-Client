@@ -50,13 +50,13 @@ public final class FilterNeutralSetting extends AttackDetectingEntityFilter
 	public static FilterNeutralSetting genericCombat(Mode selected)
 	{
 		return new FilterNeutralSetting(
-			"description.OPTI.setting.generic.filter_neutral_combat", selected);
+			"description.opti.setting.generic.filter_neutral_combat", selected);
 	}
 	
 	public static FilterNeutralSetting genericVision(Mode selected)
 	{
 		return new FilterNeutralSetting(
-			"description.OPTI.setting.generic.filter_neutral_vision", selected);
+			"description.opti.setting.generic.filter_neutral_vision", selected);
 	}
 	
 	public static FilterNeutralSetting onOffOnly(String description,

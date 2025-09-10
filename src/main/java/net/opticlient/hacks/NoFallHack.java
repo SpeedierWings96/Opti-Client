@@ -20,11 +20,11 @@ import net.opticlient.settings.CheckboxSetting;
 public final class NoFallHack extends Hack implements UpdateListener
 {
 	private final CheckboxSetting allowElytra = new CheckboxSetting(
-		"Allow elytra", "description.OPTI.setting.nofall.allow_elytra", false);
+		"Allow elytra", "description.opti.setting.nofall.allow_elytra", false);
 	
 	private final CheckboxSetting pauseForMace =
 		new CheckboxSetting("Pause for mace",
-			"description.OPTI.setting.nofall.pause_for_mace", false);
+			"description.opti.setting.nofall.pause_for_mace", false);
 	
 	public NoFallHack()
 	{

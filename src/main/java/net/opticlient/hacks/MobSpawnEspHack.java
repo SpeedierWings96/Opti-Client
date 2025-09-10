@@ -52,10 +52,10 @@ public final class MobSpawnEspHack extends Hack
 		new ChunkAreaSetting("Draw distance", "", ChunkArea.A9);
 	
 	private final ColorSetting nightColor = new ColorSetting("Night color",
-		"description.OPTI.setting.mobspawnesp.night_color", Color.YELLOW);
+		"description.opti.setting.mobspawnesp.night_color", Color.YELLOW);
 	
 	private final ColorSetting dayColor = new ColorSetting("Day color",
-		"description.OPTI.setting.mobspawnesp.day_color", Color.RED);
+		"description.opti.setting.mobspawnesp.day_color", Color.RED);
 	
 	private final SliderSetting opacity =
 		new SliderSetting("Opacity", 0.5, 0, 1, 0.01, ValueDisplay.PERCENTAGE);

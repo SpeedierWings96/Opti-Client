@@ -30,12 +30,12 @@ public final class FilterSleepingSetting extends EntityFilterCheckbox
 	public static FilterSleepingSetting genericCombat(boolean checked)
 	{
 		return new FilterSleepingSetting(
-			"description.OPTI.setting.generic.filter_sleeping_combat", checked);
+			"description.opti.setting.generic.filter_sleeping_combat", checked);
 	}
 	
 	public static FilterSleepingSetting genericVision(boolean checked)
 	{
 		return new FilterSleepingSetting(
-			"description.OPTI.setting.generic.filter_sleeping_vision", checked);
+			"description.opti.setting.generic.filter_sleeping_vision", checked);
 	}
 }

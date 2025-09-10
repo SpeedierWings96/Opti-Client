@@ -26,14 +26,14 @@ public final class FilterArmorStandsSetting extends EntityFilterCheckbox
 	public static FilterArmorStandsSetting genericCombat(boolean checked)
 	{
 		return new FilterArmorStandsSetting(
-			"description.OPTI.setting.generic.filter_armor_stands_combat",
+			"description.opti.setting.generic.filter_armor_stands_combat",
 			checked);
 	}
 	
 	public static FilterArmorStandsSetting genericVision(boolean checked)
 	{
 		return new FilterArmorStandsSetting(
-			"description.OPTI.setting.generic.filter_armor_stands_vision",
+			"description.opti.setting.generic.filter_armor_stands_vision",
 			checked);
 	}
 }

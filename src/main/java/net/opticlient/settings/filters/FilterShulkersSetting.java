@@ -26,12 +26,12 @@ public final class FilterShulkersSetting extends EntityFilterCheckbox
 	public static FilterShulkersSetting genericCombat(boolean checked)
 	{
 		return new FilterShulkersSetting(
-			"description.OPTI.setting.generic.filter_shulkers_combat", checked);
+			"description.opti.setting.generic.filter_shulkers_combat", checked);
 	}
 	
 	public static FilterShulkersSetting genericVision(boolean checked)
 	{
 		return new FilterShulkersSetting(
-			"description.OPTI.setting.generic.filter_shulkers_vision", checked);
+			"description.opti.setting.generic.filter_shulkers_vision", checked);
 	}
 }

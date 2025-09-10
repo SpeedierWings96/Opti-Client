@@ -20,7 +20,7 @@ public class FilterOwnMessagesSetting extends CheckboxSetting
 	public FilterOwnMessagesSetting()
 	{
 		super("Filter own messages",
-			"description.OPTI.setting.chattranslator.filter_own_messages",
+			"description.opti.setting.chattranslator.filter_own_messages",
 			true);
 	}
 	

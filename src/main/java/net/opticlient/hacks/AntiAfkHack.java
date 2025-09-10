@@ -33,28 +33,28 @@ public final class AntiAfkHack extends Hack
 	implements UpdateListener, RenderListener
 {
 	private final CheckboxSetting useAi = new CheckboxSetting("Use AI",
-		"description.OPTI.setting.antiafk.use_ai", true);
+		"description.opti.setting.antiafk.use_ai", true);
 	
 	private final SliderSetting aiRange = new SliderSetting("AI range",
-		"description.OPTI.setting.antiafk.ai_range", 16, 1, 64, 1,
+		"description.opti.setting.antiafk.ai_range", 16, 1, 64, 1,
 		ValueDisplay.AREA_FROM_RADIUS);
 	
 	private final SliderSetting nonAiRange = new SliderSetting("Non-AI range",
-		"description.OPTI.setting.antiafk.non-ai_range", 1, 1, 64, 1,
+		"description.opti.setting.antiafk.non-ai_range", 1, 1, 64, 1,
 		ValueDisplay.AREA_FROM_RADIUS);
 	
 	private final SliderSetting waitTime = new SliderSetting("Wait time",
-		"description.OPTI.setting.antiafk.wait_time", 2.5, 0, 60, 0.05,
+		"description.opti.setting.antiafk.wait_time", 2.5, 0, 60, 0.05,
 		ValueDisplay.DECIMAL.withSuffix("s"));
 	
 	private final SliderSetting waitTimeRand = new SliderSetting(
 		"Wait time randomization",
-		"description.OPTI.setting.antiafk.wait_time_randomization", 0.5, 0, 60,
+		"description.opti.setting.antiafk.wait_time_randomization", 0.5, 0, 60,
 		0.05, ValueDisplay.DECIMAL.withPrefix("\u00b1").withSuffix("s"));
 	
 	private final CheckboxSetting showWaitTime =
 		new CheckboxSetting("Show wait time",
-			"description.OPTI.setting.antiafk.show_wait_time", true);
+			"description.opti.setting.antiafk.show_wait_time", true);
 	
 	private int timer;
 	private Random random = Random.createLocal();

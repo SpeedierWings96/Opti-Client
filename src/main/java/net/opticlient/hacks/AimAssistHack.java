@@ -39,7 +39,7 @@ public final class AimAssistHack extends Hack
 			ValueDisplay.DEGREES.withSuffix("/s"));
 	
 	private final SliderSetting fov =
-		new SliderSetting("FOV", "description.OPTI.setting.aimassist.fov", 120,
+		new SliderSetting("FOV", "description.opti.setting.aimassist.fov", 120,
 			30, 360, 10, ValueDisplay.DEGREES);
 	
 	private final AimAtSetting aimAt = new AimAtSetting(
@@ -47,16 +47,16 @@ public final class AimAssistHack extends Hack
 	
 	private final SliderSetting ignoreMouseInput =
 		new SliderSetting("Ignore mouse input",
-			"description.OPTI.setting.aimassist.ignore_mouse_input", 0, 0, 1,
+			"description.opti.setting.aimassist.ignore_mouse_input", 0, 0, 1,
 			0.01, ValueDisplay.PERCENTAGE);
 	
 	private final CheckboxSetting checkLOS =
 		new CheckboxSetting("Check line of sight",
-			"description.OPTI.setting.aimassist.check_line_of_sight", true);
+			"description.opti.setting.aimassist.check_line_of_sight", true);
 	
 	private final CheckboxSetting aimWhileBlocking =
 		new CheckboxSetting("Aim while blocking",
-			"description.OPTI.setting.aimassist.aim_while_blocking", false);
+			"description.opti.setting.aimassist.aim_while_blocking", false);
 	
 	private final EntityFilterList entityFilters =
 		new EntityFilterList(FilterPlayersSetting.genericCombat(false),

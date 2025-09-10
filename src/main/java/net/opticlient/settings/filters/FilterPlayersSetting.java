@@ -26,12 +26,12 @@ public final class FilterPlayersSetting extends EntityFilterCheckbox
 	public static FilterPlayersSetting genericCombat(boolean checked)
 	{
 		return new FilterPlayersSetting(
-			"description.OPTI.setting.generic.filter_players_combat", checked);
+			"description.opti.setting.generic.filter_players_combat", checked);
 	}
 	
 	public static FilterPlayersSetting genericVision(boolean checked)
 	{
 		return new FilterPlayersSetting(
-			"description.OPTI.setting.generic.filter_players_vision", checked);
+			"description.opti.setting.generic.filter_players_vision", checked);
 	}
 }

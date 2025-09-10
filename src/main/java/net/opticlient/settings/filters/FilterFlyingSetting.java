@@ -50,6 +50,6 @@ public final class FilterFlyingSetting extends SliderSetting
 	public static FilterFlyingSetting genericCombat(double value)
 	{
 		return new FilterFlyingSetting(
-			"description.OPTI.setting.generic.filter_flying_combat", value);
+			"description.opti.setting.generic.filter_flying_combat", value);
 	}
 }

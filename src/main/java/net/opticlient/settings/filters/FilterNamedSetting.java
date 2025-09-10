@@ -25,12 +25,12 @@ public final class FilterNamedSetting extends EntityFilterCheckbox
 	public static FilterNamedSetting genericCombat(boolean checked)
 	{
 		return new FilterNamedSetting(
-			"description.OPTI.setting.generic.filter_named_combat", checked);
+			"description.opti.setting.generic.filter_named_combat", checked);
 	}
 	
 	public static FilterNamedSetting genericVision(boolean checked)
 	{
 		return new FilterNamedSetting(
-			"description.OPTI.setting.generic.filter_named_vision", checked);
+			"description.opti.setting.generic.filter_named_vision", checked);
 	}
 }

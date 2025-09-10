@@ -26,6 +26,6 @@ public final class FilterCrystalsSetting extends EntityFilterCheckbox
 	public static FilterCrystalsSetting genericCombat(boolean checked)
 	{
 		return new FilterCrystalsSetting(
-			"description.OPTI.setting.generic.filter_crystals_combat", checked);
+			"description.opti.setting.generic.filter_crystals_combat", checked);
 	}
 }

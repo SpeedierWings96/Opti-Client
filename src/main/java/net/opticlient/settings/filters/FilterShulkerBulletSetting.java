@@ -26,7 +26,7 @@ public final class FilterShulkerBulletSetting extends EntityFilterCheckbox
 	public static FilterShulkerBulletSetting genericCombat(boolean checked)
 	{
 		return new FilterShulkerBulletSetting(
-			"description.OPTI.setting.generic.filter_shulker_bullets_combat",
+			"description.opti.setting.generic.filter_shulker_bullets_combat",
 			checked);
 	}
 }

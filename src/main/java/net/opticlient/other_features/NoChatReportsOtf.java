@@ -49,7 +49,7 @@ public final class NoChatReportsOtf extends OtherFeature
 	
 	public NoChatReportsOtf()
 	{
-		super("NoChatReports", "description.OPTI.other_feature.nochatreports");
+		super("NoChatReports", "description.opti.other_feature.nochatreports");
 		addSetting(disableSignatures);
 		
 		ClientLoginConnectionEvents.INIT.register(this::onLoginStart);
@@ -123,7 +123,7 @@ public final class NoChatReportsOtf extends OtherFeature
 		return new MessageIndicator(0xE84F58, Icon.CHAT_MODIFIED,
 			Text.literal(ChatUtils.opti_PREFIX + "\u00a7cReportable\u00a7r - "
 				+ OPTI.translate(
-					"description.OPTI.nochatreports.message_is_reportable")),
+					"description.opti.nochatreports.message_is_reportable")),
 			"Reportable");
 	}
 	

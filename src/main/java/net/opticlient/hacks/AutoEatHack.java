@@ -50,23 +50,23 @@ import net.opticlient.util.InventoryUtils;
 public final class AutoEatHack extends Hack implements UpdateListener
 {
 	private final SliderSetting targetHunger = new SliderSetting(
-		"Target hunger", "description.OPTI.setting.autoeat.target_hunger", 10,
+		"Target hunger", "description.opti.setting.autoeat.target_hunger", 10,
 		0, 10, 0.5, ValueDisplay.DECIMAL);
 	
 	private final SliderSetting minHunger = new SliderSetting("Min hunger",
-		"description.OPTI.setting.autoeat.min_hunger", 6.5, 0, 10, 0.5,
+		"description.opti.setting.autoeat.min_hunger", 6.5, 0, 10, 0.5,
 		ValueDisplay.DECIMAL);
 	
 	private final SliderSetting injuredHunger = new SliderSetting(
-		"Injured hunger", "description.OPTI.setting.autoeat.injured_hunger", 10,
+		"Injured hunger", "description.opti.setting.autoeat.injured_hunger", 10,
 		0, 10, 0.5, ValueDisplay.DECIMAL);
 	
 	private final SliderSetting injuryThreshold = new SliderSetting(
-		"Injury threshold", "description.OPTI.setting.autoeat.injury_threshold",
+		"Injury threshold", "description.opti.setting.autoeat.injury_threshold",
 		1.5, 0.5, 10, 0.5, ValueDisplay.DECIMAL);
 	
 	private final EnumSetting<TakeItemsFrom> takeItemsFrom = new EnumSetting<>(
-		"Take items from", "description.OPTI.setting.autoeat.take_items_from",
+		"Take items from", "description.opti.setting.autoeat.take_items_from",
 		TakeItemsFrom.values(), TakeItemsFrom.HOTBAR);
 	
 	private final CheckboxSetting allowOffhand =
@@ -74,19 +74,19 @@ public final class AutoEatHack extends Hack implements UpdateListener
 	
 	private final CheckboxSetting eatWhileWalking =
 		new CheckboxSetting("Eat while walking",
-			"description.OPTI.setting.autoeat.eat_while_walking", false);
+			"description.opti.setting.autoeat.eat_while_walking", false);
 	
 	private final CheckboxSetting allowHunger =
 		new CheckboxSetting("Allow hunger effect",
-			"description.OPTI.setting.autoeat.allow_hunger", true);
+			"description.opti.setting.autoeat.allow_hunger", true);
 	
 	private final CheckboxSetting allowPoison =
 		new CheckboxSetting("Allow poison effect",
-			"description.OPTI.setting.autoeat.allow_poison", false);
+			"description.opti.setting.autoeat.allow_poison", false);
 	
 	private final CheckboxSetting allowChorus =
 		new CheckboxSetting("Allow chorus fruit",
-			"description.OPTI.setting.autoeat.allow_chorus", false);
+			"description.opti.setting.autoeat.allow_chorus", false);
 	
 	private int oldSlot = -1;
 	

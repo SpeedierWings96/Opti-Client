@@ -21,7 +21,7 @@ public final class HitboxCheckSetting
 {
 	private static final MinecraftClient MC = OptiClient.MC;
 	private static final WText DESCRIPTION =
-		WText.translated("description.OPTI.setting.mobspawnesp.hitbox_check")
+		WText.translated("description.opti.setting.mobspawnesp.hitbox_check")
 			.append(buildDescriptionSuffix());
 	
 	public HitboxCheckSetting()
@@ -66,7 +66,7 @@ public final class HitboxCheckSetting
 		UNSTABLE("Unstable", HitboxCheckSetting::unstableHitboxCheck);
 		
 		private static final String TRANSLATION_KEY_PREFIX =
-			"description.OPTI.setting.mobspawnesp.hitbox_check.";
+			"description.opti.setting.mobspawnesp.hitbox_check.";
 		
 		private final String name;
 		private final WText description;

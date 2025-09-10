@@ -39,14 +39,14 @@ public final class FilterZombiePiglinsSetting
 	public static FilterZombiePiglinsSetting genericCombat(Mode selected)
 	{
 		return new FilterZombiePiglinsSetting(
-			"description.OPTI.setting.generic.filter_zombie_piglins_combat",
+			"description.opti.setting.generic.filter_zombie_piglins_combat",
 			selected);
 	}
 	
 	public static FilterZombiePiglinsSetting genericVision(Mode selected)
 	{
 		return new FilterZombiePiglinsSetting(
-			"description.OPTI.setting.generic.filter_zombie_piglins_vision",
+			"description.opti.setting.generic.filter_zombie_piglins_vision",
 			selected);
 	}
 	

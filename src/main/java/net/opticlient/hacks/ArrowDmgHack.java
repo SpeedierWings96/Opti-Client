@@ -27,12 +27,12 @@ import net.opticlient.settings.SliderSetting.ValueDisplay;
 public final class ArrowDmgHack extends Hack implements StopUsingItemListener
 {
 	private final SliderSetting strength = new SliderSetting("Strength",
-		"description.OPTI.setting.arrowdmg.strength", 10, 0.1, 10, 0.1,
+		"description.opti.setting.arrowdmg.strength", 10, 0.1, 10, 0.1,
 		ValueDisplay.DECIMAL);
 	
 	private final CheckboxSetting yeetTridents =
 		new CheckboxSetting("Trident yeet mode",
-			"description.OPTI.setting.arrowdmg.trident_yeet_mode", false);
+			"description.opti.setting.arrowdmg.trident_yeet_mode", false);
 	
 	public ArrowDmgHack()
 	{

@@ -33,22 +33,22 @@ public final class ChatTranslatorHack extends Hack
 	
 	private final LanguageSetting playerLanguage =
 		LanguageSetting.withoutAutoDetect("Your language",
-			"description.OPTI.setting.chattranslator.your_language",
+			"description.opti.setting.chattranslator.your_language",
 			Language.ENGLISH);
 	
 	private final LanguageSetting otherLanguage =
 		LanguageSetting.withoutAutoDetect("Other language",
-			"description.OPTI.setting.chattranslator.other_language",
+			"description.opti.setting.chattranslator.other_language",
 			Language.CHINESE_SIMPLIFIED);
 	
 	private final CheckboxSetting autoDetectReceived =
 		new CheckboxSetting("Detect received language",
-			"description.OPTI.setting.chattranslator.detect_received_language",
+			"description.opti.setting.chattranslator.detect_received_language",
 			true);
 	
 	private final CheckboxSetting autoDetectSent = new CheckboxSetting(
 		"Detect sent language",
-		"description.OPTI.setting.chattranslator.detect_sent_language", true);
+		"description.opti.setting.chattranslator.detect_sent_language", true);
 	
 	private final FilterOwnMessagesSetting filterOwnMessages =
 		new FilterOwnMessagesSetting();

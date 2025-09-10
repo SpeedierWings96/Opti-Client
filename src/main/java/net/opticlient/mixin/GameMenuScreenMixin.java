@@ -35,7 +35,7 @@ public abstract class GameMenuScreenMixin extends Screen
 {
 	@Unique
 	private static final Identifier opti_TEXTURE =
-		Identifier.of("Opti", "Opti_128.png");
+		Identifier.of("opti", "opti_128.png");
 	
 	@Unique
 	private ButtonWidget OPTIOptionsButton;

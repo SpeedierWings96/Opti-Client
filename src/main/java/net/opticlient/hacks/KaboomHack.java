@@ -30,14 +30,14 @@ import net.opticlient.util.RotationUtils;
 public final class KaboomHack extends Hack implements UpdateListener
 {
 	private final SliderSetting power =
-		new SliderSetting("Power", "description.OPTI.setting.kaboom.power", 128,
+		new SliderSetting("Power", "description.opti.setting.kaboom.power", 128,
 			32, 512, 32, ValueDisplay.INTEGER);
 	
 	private final CheckboxSetting sound = new CheckboxSetting("Sound",
-		"description.OPTI.setting.kaboom.sound", true);
+		"description.opti.setting.kaboom.sound", true);
 	
 	private final CheckboxSetting particles = new CheckboxSetting("Particles",
-		"description.OPTI.setting.kaboom.particles", true);
+		"description.opti.setting.kaboom.particles", true);
 	
 	private final Random random = Random.create();
 	
