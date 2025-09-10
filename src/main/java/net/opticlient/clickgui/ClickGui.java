@@ -676,7 +676,7 @@ public final class ClickGui
 			int y4 = y3 + window.getScrollOffset();
 			
 			// window background with rounded corners
-			int radius = 6;
+			int radius = 10;
 			RenderUtils.fillRounded2D(context, x1, y3, x4, y2, radius,
 				windowBgColor);
 			
@@ -721,11 +721,8 @@ public final class ClickGui
 			context.disableScissor();
 		}
 		
-		// modern drop shadow around window
-		RenderUtils.drawBoxShadow2D(context, x1, y1, x2, y2);
-		
 		// window outline (rounded)
-		RenderUtils.drawRoundedBorder2D(context, x1, y1, x2, y2, 6,
+		RenderUtils.drawRoundedBorder2D(context, x1, y1, x2, y2, 10,
 			outlineColor);
 		
 		// title bar separator line (subtle)
@@ -770,12 +767,12 @@ public final class ClickGui
 		// title bar background
 		// above & below buttons
 		int titleBgColor = RenderUtils.toIntColor(acColor, opacity * anim);
-		RenderUtils.fillRounded2D(context, x3, y1, x2, y4, 3, titleBgColor);
-		RenderUtils.fillRounded2D(context, x3, y5, x2, y3, 3, titleBgColor);
+		RenderUtils.fillRounded2D(context, x3, y1, x2, y4, 10, titleBgColor);
+		RenderUtils.fillRounded2D(context, x3, y5, x2, y3, 10, titleBgColor);
 		
 		// title bar background
 		// behind title
-		RenderUtils.fillRounded2D(context, x1, y1, x3, y3, 3, titleBgColor);
+		RenderUtils.fillRounded2D(context, x1, y1, x3, y3, 10, titleBgColor);
 		
 		// window title
 		TextRenderer tr = MC.textRenderer;
