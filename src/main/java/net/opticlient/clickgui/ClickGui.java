@@ -685,31 +685,6 @@ public final class ClickGui
 			matrixStack.pushMatrix();
 			matrixStack.translate(x1, y4);
 			
-			// window background
-			// between children
-			int xc1 = 2;
-			int xc2 = x5 - x1;
-			for(int i = 0; i < window.countChildren(); i++)
-			{
-				int yc1 = window.getChild(i).getY();
-				int yc2 = yc1 - 2;
-				context.fill(xc1, yc2, xc2, yc1, windowBgColor);
-			}
-			
-			// window background
-			// bottom
-			int yc1;
-			if(window.countChildren() == 0)
-				yc1 = 0;
-			else
-			{
-				Component lastChild =
-					window.getChild(window.countChildren() - 1);
-				yc1 = lastChild.getY() + lastChild.getHeight();
-			}
-			int yc2 = yc1 + 2;
-			context.fill(xc1, yc2, xc2, yc1, windowBgColor);
-			
 			// render children
 			int cMouseX = mouseX - x1;
 			int cMouseY = mouseY - y4;
