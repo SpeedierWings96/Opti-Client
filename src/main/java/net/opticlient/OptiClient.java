@@ -101,6 +101,26 @@ public enum OptiClient
 		settingsProfileFolder = OPTIFolder.resolve("settings");
 		this.settingsFile = new SettingsFile(settingsFile, hax, cmds, otfs);
 		this.settingsFile.load();
+		
+		// Force ClickGUI theme to blue by default
+		try
+		{
+			net.opticlient.settings.ColorSetting bg =
+				(net.opticlient.settings.ColorSetting)hax.clickGuiHack
+					.getSettings().get("background");
+			net.opticlient.settings.ColorSetting ac =
+				(net.opticlient.settings.ColorSetting)hax.clickGuiHack
+					.getSettings().get("accent");
+			if(bg != null)
+				bg.setColor(new java.awt.Color(0x102030));
+			if(ac != null)
+				ac.setColor(new java.awt.Color(0x2D7FF9));
+		}catch(Exception ignored)
+		{
+			// If anything goes wrong, ignore and continue with existing
+			// settings
+		}
+		
 		hax.tooManyHaxHack.loadBlockedHacksFile();
 		
 		Path keybindsFile = OPTIFolder.resolve("keybinds.json");
