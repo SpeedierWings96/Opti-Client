@@ -147,8 +147,8 @@ public final class SliderComponent extends Component
 		float xk2 = xk1 + 8;
 		float yk1 = y3 + 1.5F;
 		float yk2 = y2 - 1.5F;
-		int knobColor = grayedOut ? 0xC0808080 : RenderUtils
-			.toIntColor(setting.getKnobColor(), hSlider ? 1 : 0.75F);
+		int knobColor = grayedOut ? 0xC0808080
+			: RenderUtils.toIntColor(GUI.getAcColor(), hSlider ? 1 : 0.85F);
 		RenderUtils.fill2D(context, xk1, yk1, xk2, yk2, knobColor);
 		RenderUtils.drawBorder2D(context, xk1, yk1, xk2, yk2, 0x80101010);
 		

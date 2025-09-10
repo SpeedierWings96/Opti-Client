@@ -69,9 +69,17 @@ public final class CheckboxComponent extends Component
 		// background
 		context.fill(x3, y1, x2, y2, getFillColor(false));
 		
-		// box
-		context.fill(x1, y1, x3, y2, getFillColor(hovering));
+		// box (modern: accent when checked)
 		int outlineColor = RenderUtils.toIntColor(GUI.getAcColor(), 0.5F);
+		if(setting.isChecked())
+		{
+			int acc = RenderUtils.toIntColor(GUI.getAcColor(),
+				hovering ? 1.0F : 0.85F);
+			context.fill(x1, y1, x3, y2, acc);
+		}else
+		{
+			context.fill(x1, y1, x3, y2, getFillColor(hovering));
+		}
 		RenderUtils.drawBorder2D(context, x1, y1, x3, y2, outlineColor);
 		
 		context.state.goUpLayer();

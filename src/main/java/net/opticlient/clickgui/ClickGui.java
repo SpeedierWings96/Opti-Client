@@ -717,12 +717,16 @@ public final class ClickGui
 			context.disableScissor();
 		}
 		
+		// modern drop shadow around window
+		RenderUtils.drawBoxShadow2D(context, x1, y1, x2, y2);
+		
 		// window outline
 		RenderUtils.drawBorder2D(context, x1, y1, x2, y2, outlineColor);
 		
-		// title bar separator line
+		// title bar separator line (subtle)
 		if(!window.isMinimized())
-			RenderUtils.drawLine2D(context, x1, y3, x2, y3, outlineColor);
+			RenderUtils.drawLine2D(context, x1, y3, x2, y3,
+				RenderUtils.toIntColor(acColor, 0.35F));
 		
 		// title bar buttons
 		int x3 = x2;

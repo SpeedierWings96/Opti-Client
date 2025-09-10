@@ -98,7 +98,7 @@ public final class FeatureButton extends Component
 		if(hFeature)
 			GUI.setTooltip(feature.getWrappedDescription(200));
 		
-		// buttons
+		// buttons (modern: use accent for enabled)
 		context.fill(x1, y1, x3, y2,
 			getButtonColor(feature.isEnabled(), hFeature));
 		if(hasSettings)
@@ -128,9 +128,13 @@ public final class FeatureButton extends Component
 	
 	private int getButtonColor(boolean enabled, boolean hovering)
 	{
-		float[] rgb = enabled ? new float[]{0, 1, 0} : GUI.getBgColor();
-		float opacity = GUI.getOpacity() * (hovering ? 1.5F : 1);
-		return RenderUtils.toIntColor(rgb, opacity);
+		float[] base = enabled ? GUI.getAcColor() : GUI.getBgColor();
+		float boost = hovering ? 1.15F : 1F;
+		float r = Math.min(1F, base[0] * boost);
+		float g = Math.min(1F, base[1] * boost);
+		float b = Math.min(1F, base[2] * boost);
+		float opacity = GUI.getOpacity() * (hovering ? 1.2F : 1F);
+		return RenderUtils.toIntColor(new float[]{r, g, b}, opacity);
 	}
 	
 	@Override
@@ -144,6 +148,6 @@ public final class FeatureButton extends Component
 	@Override
 	public int getDefaultHeight()
 	{
-		return 11;
+		return 13;
 	}
 }
