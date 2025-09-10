@@ -40,11 +40,12 @@ public final class KeybindsFile
 			if(newKeybinds.isEmpty())
 				newKeybinds = KeybindList.DEFAULT_KEYBINDS;
 			
-			// Migration: ensure Right Shift opens ClickGUI
-			newKeybinds
-				.removeIf(kb -> kb.getKey().equals("key.keyboard.right.shift"));
+			// Migration: Only keep Right Shift -> ClickGUI by default
+			newKeybinds.clear();
 			newKeybinds
 				.add(new Keybind("key.keyboard.right.shift", "clickgui"));
+			
+			list.setKeybinds(newKeybinds);
 			
 			list.setKeybinds(newKeybinds);
 			

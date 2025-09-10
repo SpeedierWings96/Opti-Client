@@ -790,6 +790,47 @@ public enum RenderUtils
 	}
 	
 	/**
+	 * Fills a rectangle with chopped corners to simulate rounded corners.
+	 * This is a lightweight approximation (no curves) with the given pixel
+	 * radius.
+	 */
+	public static void fillRounded2D(DrawContext context, float x1, float y1,
+		float x2, float y2, int radius, int color)
+	{
+		if(radius <= 0)
+		{
+			context.fill((int)x1, (int)y1, (int)x2, (int)y2, color);
+			return;
+		}
+		// center
+		fill2D(context, x1 + radius, y1, x2 - radius, y2, color);
+		// left and right bars
+		fill2D(context, x1, y1 + radius, x1 + radius, y2 - radius, color);
+		fill2D(context, x2 - radius, y1 + radius, x2, y2 - radius, color);
+	}
+	
+	/**
+	 * Draws a border for a rounded rectangle (chamfered).
+	 */
+	public static void drawRoundedBorder2D(DrawContext context, float x1,
+		float y1, float x2, float y2, int radius, int color)
+	{
+		// top
+		drawLine2D(context, x1 + radius, y1, x2 - radius, y1, color);
+		// bottom
+		drawLine2D(context, x1 + radius, y2, x2 - radius, y2, color);
+		// left
+		drawLine2D(context, x1, y1 + radius, x1, y2 - radius, color);
+		// right
+		drawLine2D(context, x2, y1 + radius, x2, y2 - radius, color);
+		// corners (diagonals to fake rounding)
+		drawLine2D(context, x1, y1 + radius, x1 + radius, y1, color);
+		drawLine2D(context, x2 - radius, y1, x2, y1 + radius, color);
+		drawLine2D(context, x1, y2 - radius, x1 + radius, y2, color);
+		drawLine2D(context, x2 - radius, y2, x2, y2 - radius, color);
+	}
+	
+	/**
 	 * Draws a 1px border around the given polygon.
 	 */
 	public static void drawLineStrip2D(DrawContext context, float[][] vertices,

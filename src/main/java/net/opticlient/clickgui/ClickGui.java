@@ -93,7 +93,10 @@ public final class ClickGui
 		windows.add(uiSettings);
 		
 		for(Window window : windows)
+		{
 			window.setMinimized(true);
+			window.startOpenAnimation();
+		}
 		
 		windows.add(OptiClient.INSTANCE.getHax().radarHack.getWindow());
 		
@@ -611,8 +614,9 @@ public final class ClickGui
 		int y2 = y1 + window.getHeight();
 		int y3 = y1 + 13;
 		
-		int windowBgColor = RenderUtils.toIntColor(bgColor, opacity);
-		int outlineColor = RenderUtils.toIntColor(acColor, 0.5F);
+		float anim = window.stepAnimation();
+		int windowBgColor = RenderUtils.toIntColor(bgColor, opacity * anim);
+		int outlineColor = RenderUtils.toIntColor(acColor, 0.5F * anim);
 		
 		Matrix3x2fStack matrixStack = context.getMatrices();
 		
@@ -764,20 +768,21 @@ public final class ClickGui
 		
 		// title bar background
 		// above & below buttons
-		int titleBgColor = RenderUtils.toIntColor(acColor, opacity);
-		context.fill(x3, y1, x2, y4, titleBgColor);
-		context.fill(x3, y5, x2, y3, titleBgColor);
+		int titleBgColor = RenderUtils.toIntColor(acColor, opacity * anim);
+		RenderUtils.fillRounded2D(context, x3, y1, x2, y4, 3, titleBgColor);
+		RenderUtils.fillRounded2D(context, x3, y5, x2, y3, 3, titleBgColor);
 		
 		// title bar background
 		// behind title
-		context.fill(x1, y1, x3, y3, titleBgColor);
+		RenderUtils.fillRounded2D(context, x1, y1, x3, y3, 3, titleBgColor);
 		
 		// window title
 		TextRenderer tr = MC.textRenderer;
 		String title = tr.trimToWidth(Text.literal(window.getTitle()), x3 - x1)
 			.getString();
 		context.state.goUpLayer();
-		context.drawText(tr, title, x1 + 2, y1 + 3, txtColor, false);
+		int titleColor = (txtColor & 0x00FFFFFF) | ((int)(anim * 255) << 24);
+		context.drawText(tr, title, x1 + 2, y1 + 3, titleColor, false);
 		context.state.goDownLayer();
 	}
 	

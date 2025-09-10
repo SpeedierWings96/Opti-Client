@@ -39,6 +39,11 @@ public class Window
 	
 	private boolean invisible;
 	
+	// Animation state
+	private float openProgress = 1.0F; // 0..1
+	private boolean openingAnim;
+	private boolean closingAnim;
+	
 	private boolean fixedWidth;
 	private int innerHeight;
 	private int maxInnerHeight;
@@ -329,7 +334,45 @@ public class Window
 	
 	public final void close()
 	{
-		closing = true;
+		// start closing animation instead of removing immediately
+		closingAnim = true;
+		openingAnim = false;
+	}
+	
+	public final void startOpenAnimation()
+	{
+		openProgress = 0F;
+		openingAnim = true;
+		closingAnim = false;
+	}
+	
+	public final float stepAnimation()
+	{
+		if(openingAnim)
+		{
+			openProgress += 0.15F;
+			if(openProgress >= 1F)
+			{
+				openProgress = 1F;
+				openingAnim = false;
+			}
+		}
+		if(closingAnim)
+		{
+			openProgress -= 0.2F;
+			if(openProgress <= 0F)
+			{
+				openProgress = 0F;
+				closingAnim = false;
+				closing = true;
+			}
+		}
+		return openProgress;
+	}
+	
+	public final float getOpenProgress()
+	{
+		return openProgress;
 	}
 	
 	public final boolean isInvisible()

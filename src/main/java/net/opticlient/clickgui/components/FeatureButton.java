@@ -72,6 +72,7 @@ public final class FeatureButton extends Component
 		if(!isSettingsWindowOpen())
 		{
 			settingsWindow = new SettingsWindow(feature, getParent(), getY());
+			settingsWindow.startOpenAnimation();
 			GUI.addWindow(settingsWindow);
 			
 		}else
