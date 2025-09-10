@@ -675,10 +675,10 @@ public final class ClickGui
 			int x5 = x4 - 2;
 			int y4 = y3 + window.getScrollOffset();
 			
-			// window background
-			// left & right
-			context.fill(x1, y3, x3, y2, windowBgColor);
-			context.fill(x5, y3, x4, y2, windowBgColor);
+			// window background with rounded corners
+			int radius = 6;
+			RenderUtils.fillRounded2D(context, x1, y3, x4, y2, radius,
+				windowBgColor);
 			
 			context.enableScissor(x1, y3, x2, y2);
 			
@@ -724,8 +724,9 @@ public final class ClickGui
 		// modern drop shadow around window
 		RenderUtils.drawBoxShadow2D(context, x1, y1, x2, y2);
 		
-		// window outline
-		RenderUtils.drawBorder2D(context, x1, y1, x2, y2, outlineColor);
+		// window outline (rounded)
+		RenderUtils.drawRoundedBorder2D(context, x1, y1, x2, y2, 6,
+			outlineColor);
 		
 		// title bar separator line (subtle)
 		if(!window.isMinimized())
@@ -803,6 +804,12 @@ public final class ClickGui
 		// button outline
 		int outlineColor = RenderUtils.toIntColor(acColor, 0.5F);
 		RenderUtils.drawBorder2D(context, x1, y1, x2, y2, outlineColor);
+	}
+	
+	public void startOpenAnimations()
+	{
+		for(Window w : windows)
+			w.startOpenAnimation();
 	}
 	
 	public float[] getBgColor()

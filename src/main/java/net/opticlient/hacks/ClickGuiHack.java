@@ -62,6 +62,8 @@ public final class ClickGuiHack extends Hack
 	@Override
 	protected void onEnable()
 	{
+		// Restart animations every time the GUI opens
+		OPTI.getGui().startOpenAnimations();
 		MC.setScreen(new ClickGuiScreen(OPTI.getGui()));
 		setEnabled(false);
 	}
